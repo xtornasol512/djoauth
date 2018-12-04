@@ -7,6 +7,9 @@
     "DEBUG_COLLECTSTATIC": {
       "required": true
     },
+    "SECRET_KEY": {
+      "required": true
+    },
     "DEBUG_STATE": {
       "required": true
     },
