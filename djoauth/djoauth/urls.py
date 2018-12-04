@@ -16,10 +16,11 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 
-from home.views import simple_view
+from home.views import simple_view, terms
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^accounts/', include('allauth.urls')),
     url(r'^$', simple_view, name="simple_view"),
+    url(r'^terms$', terms, name="terms"),
 ]
