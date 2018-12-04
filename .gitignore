@@ -1,3 +1,4 @@
 ~/
-.ven/
+.venv/
 djoauth/staticfiles/
+secrets.py
