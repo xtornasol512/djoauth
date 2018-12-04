@@ -1,0 +1,31 @@
+{
+  "name": "DJ oauth testing with facebook",
+  "scripts": {
+    "postdeploy": "bin/post_compile"
+  },
+  "env": {
+    "DEBUG_COLLECTSTATIC": {
+      "required": true
+    },
+    "DEBUG_STATE": {
+      "required": true
+    },
+    "DJANGO_SETTINGS_MODULE": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [
+    "papertrail",
+    "heroku-postgresql"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
